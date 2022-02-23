@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/3column-preview-card-component-PZxKLAsX1)
+- Live Site URL: [Netlify](https://coder-teamie-three-column-card.netlify.app/)
 
 ## My process
 
@@ -49,7 +49,7 @@ Some code snippets:
 ```html
 <article class="card card-2">
   <img src="./images/icon-suvs.svg" class="suv" alt="suvs" />
-  <h1>SUVs</h1>
+  <h2>SUVs</h2>
   <p>
     Take an SUV for its spacious interior, power, and versatility. Perfect for
     your next family vacation and off-road adventures.
@@ -70,13 +70,6 @@ Some code snippets:
   }
 }
 ```
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
