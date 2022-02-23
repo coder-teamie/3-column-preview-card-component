@@ -22,7 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Layout](./images/Desktop-Layout.png)
+![Mobile View](./images/Mobile-Layout.png)
 
 ### Links
 
@@ -31,35 +32,43 @@ Users should be able to:
 
 ## My process
 
+I started this project by structuring my HTML first, determining what the content of the project would be and how many containers and sub-containers I would require.
+Then I moved on to creating a list of some "global variables" which I resused in the entire project after which I designed the mobile layout first then moved to the desktop layout using SCSS for my whole styling and making use of modules which allowed me break up my code into lego blocks.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
+- SASS
+- Mobile-first workflows
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Some code snippets:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<article class="card card-2">
+  <img src="./images/icon-suvs.svg" class="suv" alt="suvs" />
+  <h2>SUVs</h2>
+  <p>
+    Take an SUV for its spacious interior, power, and versatility. Perfect for
+    your next family vacation and off-road adventures.
+  </p>
+  <a href="#" class="btn">learn more</a>
+</article>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```scss
+@mixin display($layout, $direction) {
+  display: $layout;
+  flex-direction: $direction;
 }
-```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
+@mixin desktop {
+  @media screen and (min-width: $desktopLayout) {
+    @content;
+  }
+}
 ```
 
 ### Useful resources

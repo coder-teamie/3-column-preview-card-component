@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap');
+:root {
+  --primaryFont: Big Shoulders Display, cursive;
+  --secondaryFont: Lexend Deca, sans-serif;
+  --brightOrange: #e38826;
+  --darkCyan: #006970;
+  --transparentWhite: rgba(255, 255, 255, 0.75);
+  --lightGray: #f2f2f2;
+  --lightGray: #f2f2f2;
+  --transition: all 0.2s linear;
+  --radius: 0.5rem;
+  --mobileLayout: 23.4375rem;
+  --desktopLayout: 90rem;
+}
+
+*::before,
+*::after {
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primaryFont: Big Shoulders Display, cursive;
+  --secondaryFont: Lexend Deca, sans-serif;
+  --brightOrange: #e38826;
+  --darkCyan: #006970;
+  --transparentWhite: rgba(255, 255, 255, 0.75);
+  --lightGray: #f2f2f2;
+  --lightGray: #f2f2f2;
+  --transition: all 0.2s linear;
+  --radius: 0.5rem;
+  --mobileLayout: 23.4375rem;
+  --desktopLayout: 90rem;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 100%;
+  font-size: 0.9375rem;
+  background: #f2f2f2;
+}
+
+.btn {
+  text-transform: capitalize;
+  background: #fff;
+  font-size: 0.7rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  color: #e38826;
+  text-align: center;
+  display: inline-block;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 0.15rem solid white;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #f2f2f2 !important;
+  border-color: #f2f2f2;
+}
+
+.card {
+  padding: 2rem;
+  width: 100%;
+  max-width: 11rem;
+  margin: 0 auto;
+}
+
+.card h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-weight: 600;
+}
+
+.card p {
+  color: #fff;
+  font-size: 0.67rem;
+  opacity: 0.8;
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.card img {
+  width: 43px;
+  height: 28px;
+}
+
+.card-1 {
+  background: #e38826;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card-2 {
+  background: #006970;
+}
+
+.card-2 .btn {
+  color: #006970;
+}
+
+.card-3 {
+  background: #004241;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.card-3 .btn {
+  color: #004241;
+}
+
+.section-center {
+  max-width: 23.4375rem;
+  width: 100%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@media screen and (min-width: 90rem) {
+  .section-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    max-width: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 7.5rem auto;
+  }
+  .card {
+    max-width: 11rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card p {
+    margin-bottom: 4rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+  }
+  .card-1 {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .card-3 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .attribution {
+    font-size: 1rem;
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+  font-weight: 600;
+  text-decoration: underline;
+}

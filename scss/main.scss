@@ -1,0 +1,58 @@
+@import './variables';
+@import './resets';
+@import './config';
+@import './cards';
+
+.section-center {
+  max-width: 23.4375rem;
+  width: 100%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@include desktop {
+  .section-center {
+    @include display(flex, row);
+    max-width: none;
+    justify-content: center;
+    margin: 7.5rem auto;
+  }
+  .card {
+    max-width: 11rem;
+    margin-left: 0;
+    margin-right: 0;
+
+    p {
+      margin-bottom: 4rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.5px;
+      word-spacing: 0.5px;
+    }
+  }
+  .card-1 {
+    border-top-right-radius: 0;
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+  .card-3 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+  .attribution {
+    font-size: 1rem;
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 600;
+  text-decoration: underline;
+}

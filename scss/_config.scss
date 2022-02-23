@@ -1,0 +1,42 @@
+@import './variables';
+// @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap');
+
+body {
+  font-family: $secondaryFont;
+  font-size: 100%;
+  font-size: 0.9375rem;
+  background: $lightGray;
+}
+
+.btn {
+  text-transform: capitalize;
+  background: #fff;
+  font-size: 0.7rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  color: $brightOrange;
+  text-align: center;
+  display: inline-block;
+  transition: $transition;
+  border: 0.15rem solid white;
+  font-family: $secondaryFont;
+}
+
+.btn:hover {
+  background: transparent;
+  color: $lightGray !important;
+  border-color: $lightGray;
+}
+
+@mixin display($layout, $direction) {
+  display: $layout;
+  flex-direction: $direction;
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktopLayout) {
+    @content;
+  }
+}

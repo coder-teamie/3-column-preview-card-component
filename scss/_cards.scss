@@ -1,0 +1,49 @@
+.card {
+  padding: 2rem;
+  width: 100%;
+  max-width: 11rem;
+  margin: 0 auto;
+
+  h2 {
+    font-family: $primaryFont;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: $lightGray;
+    font-weight: 600;
+  }
+  p {
+    color: #fff;
+    font-size: 0.67rem;
+    opacity: 0.8;
+    letter-spacing: 0.3px;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  img {
+    width: 43px;
+    height: 28px;
+  }
+}
+
+.card-1 {
+  background: $brightOrange;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+.card-2 {
+  background: $darkCyan;
+  .btn {
+    color: $darkCyan;
+  }
+}
+
+.card-3 {
+  background: $veryDarkCyan;
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+  .btn {
+    color: $veryDarkCyan;
+  }
+}
