@@ -49,7 +49,7 @@ Some code snippets:
 ```html
 <article class="card card-2">
   <img src="./images/icon-suvs.svg" class="suv" alt="suvs" />
-  <h2>SUVs</h2>
+  <h1>SUVs</h1>
   <p>
     Take an SUV for its spacious interior, power, and versatility. Perfect for
     your next family vacation and off-road adventures.
