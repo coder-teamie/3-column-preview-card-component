@@ -16,6 +16,8 @@
   .section-center {
     @include display(flex, row);
     max-width: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 7.5rem auto;
   }
@@ -23,6 +25,7 @@
     max-width: 11rem;
     margin-left: 0;
     margin-right: 0;
+    padding: 3rem 2rem;
 
     p {
       margin-bottom: 4rem;

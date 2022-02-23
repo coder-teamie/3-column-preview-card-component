@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap");
 :root {
   --primaryFont: Big Shoulders Display, cursive;
   --secondaryFont: Lexend Deca, sans-serif;
@@ -17,7 +17,6 @@
 *::after {
   border: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -40,7 +39,7 @@ a {
 }
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 100%;
   font-size: 0.9375rem;
   background: #f2f2f2;
@@ -55,11 +54,9 @@ body {
   color: #e38826;
   text-align: center;
   display: inline-block;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   border: 0.15rem solid white;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .btn:hover {
@@ -76,7 +73,7 @@ body {
 }
 
 .card h1 {
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   font-size: 1.7rem;
   text-transform: uppercase;
   color: #f2f2f2;
@@ -132,16 +129,9 @@ body {
 
 @media screen and (min-width: 90rem) {
   .section-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     max-width: none;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin: 7.5rem auto;
   }
@@ -149,6 +139,7 @@ body {
     max-width: 11rem;
     margin-left: 0;
     margin-right: 0;
+    padding: 3rem 2rem;
   }
   .card p {
     margin-bottom: 4rem;
