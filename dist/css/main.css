@@ -127,6 +127,21 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 
+@media screen and (min-width: 768px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+  .card-1 {
+    border-top-right-radius: 0;
+  }
+  .card-2 {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+
 @media screen and (min-width: 90rem) {
   .section-center {
     display: flex;
@@ -135,6 +150,7 @@ body {
     justify-content: center;
     margin: 10rem auto;
     margin-bottom: 7.5rem;
+    column-gap: 0;
   }
   .card {
     max-width: 11rem;
@@ -152,6 +168,10 @@ body {
     border-top-right-radius: 0;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+  }
+  .card-2 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .card-3 {
     border-bottom-left-radius: 0;
