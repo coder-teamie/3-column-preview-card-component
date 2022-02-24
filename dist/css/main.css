@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap");
 :root {
-  --primaryFont: Big Shoulders Display, cursive;
+  --primaryFont: Big Shoulders Display, sans-serif;
   --secondaryFont: Lexend Deca, sans-serif;
   --brightOrange: #e38826;
   --darkCyan: #006970;
@@ -25,7 +25,7 @@ a {
 }
 
 :root {
-  --primaryFont: Big Shoulders Display, cursive;
+  --primaryFont: Big Shoulders Display, sans-serif;
   --secondaryFont: Lexend Deca, sans-serif;
   --brightOrange: #e38826;
   --darkCyan: #006970;
@@ -73,7 +73,7 @@ body {
 }
 
 .card h1 {
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   font-size: 1.7rem;
   text-transform: uppercase;
   color: #f2f2f2;

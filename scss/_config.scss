@@ -1,7 +1,6 @@
-@import './variables';
-// @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap');
+
+@import './variables';
 
 body {
   font-family: $secondaryFont;
@@ -19,6 +18,8 @@ body {
   color: $brightOrange;
   text-align: center;
   display: inline-block;
+  -webkit-transition: $transition;
+  -o-transition: $transition;
   transition: $transition;
   border: 0.15rem solid white;
   font-family: $secondaryFont;
@@ -32,6 +33,9 @@ body {
 
 @mixin display($layout, $direction) {
   display: $layout;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: $direction;
   flex-direction: $direction;
 }
 
